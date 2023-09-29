@@ -6,7 +6,13 @@
 }
 
 
-.back {
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Header section */
+#header {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
@@ -19,8 +25,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 3;
-  background: cover;
+  z-index: -1;
 }
 @media (min-aspect-ratio: 16/9) {
   .back-video {
@@ -35,8 +40,7 @@
   }
 }
 
-
-#nav {
+#header .header-top {
   height: 150px;
   width: 100%;
   display: flex;
@@ -44,14 +48,14 @@
   padding: 0 128px;
   padding-bottom: 40px;
   gap: 40px;
-  justify-content: flex-start;
+  justify-content: space-between;
   font-weight: 500;
   color: white;
   position: fixed;
   z-index: 4;
 }
 
-.container {
+.header-top .logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,26 +107,42 @@
   }
 }
 
-h1 {
-  color: rgba(15, 243, 117, 0.998);
-}
-
-.container img {
+.logo img {
   width: 100px;
   filter: invert(1);
 }
 
-#nav h4 a {
-  color: white;
+.nav-menu ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+
+.nav-menu ul li a {
+  color: #fff;
   text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+.nav-menu ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #faca22;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+.nav-menu ul li a:hover::after {
+  width: 100%;
 }
 
-#nav h4 a:hover {
-  color: grey;
-  text-decoration: underline;
+.nav-menu .fa-solid {
+  display: none;
 }
 
-.page1 {
+.header-bottom {
   text-align: center;
   color: white;
   display: flex;
@@ -134,7 +154,7 @@ h1 {
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-.page1 span {
+.header-bottom span {
   font-family: 'Bebas Neue', cursive;
   font-size: 3em;
   font-weight: bold;
@@ -149,14 +169,14 @@ h1 {
   transition: background-size .7s, background-position .5s ease-in-out;
 }
 
-.page1 span:hover {
+.header-bottom span:hover {
   background-size: 100% 100%;
   background-position: 0% 100%;
   transition: background-position .7s, background-size .5s ease-in-out;
   color: rgb(101, 8, 151);
 }
 
-.page1 a {
+.header-bottom a {
   text-decoration: none;
   display: inline-block;
   color: #fff;
@@ -166,6 +186,7 @@ h1 {
   border-radius: 50px;
   margin-top: 20px;
 }
+
 
 .main {
   height: 700px;
