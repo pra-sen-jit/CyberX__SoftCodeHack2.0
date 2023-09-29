@@ -3,36 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Updated</title>
 </head>
 <body>
-  <div class="back">
+  <section id="header">
     <video autoplay loop muted plays-inline class="back-video">
         <source src="images/mainbackgroundvid.mp4" type="video/mp4">
     </video>
-__choloche__
-    <div id="nav">
-      <div class="container">
+
+    <div class="header-top">
+      <div class="logo">
         <div class="ring"></div>
         <div class="ring"></div>
         <div class="ring"></div>
         <div class="ring"></div>
         <img src="images/logo.png">
       </div>
-      <h4><a href="#">HOME</a></h4>
-      <h4><a href="#">HERITAGE SITES</h4>
-      <h4><a href="#">TRAVEL</a></h4>
-      <h4><a href="#">GALLERY</a></h4>
-      <h4><a href="#">OUR PRIDE</a></h4>
-      <h4><a href="#">CONTACTS</a></h4>
+      <div class="nav-menu">
+        <ul class="sidemenu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">HERITAGE SITES</li>
+          <li><a href="#">TRAVEL</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">OUR PRIDE</a></li>
+          <li><a href="#">CONTACTS</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </div>
     </div>
 
-    <div class="page1">
-      <span>WELCOME TO INDIA'S INDEGINOUS CULTURAL HERITAGE</span>
+    <div class="header-bottom">
+      <span>WELCOME TO INDIA'S INDIGENOUS CULTURAL HERITAGE</span>
       <a href="#">Explore</a>
     </div>
-  </div>
+  </section>
+
+
+
+
   <div class="bgcolor-black">   
     <div class="main">
         <div class="scroller">
