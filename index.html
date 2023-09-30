@@ -8,6 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Updated</title>
 </head>
 <body>
@@ -256,5 +257,17 @@ src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="
   </div>
 
 </footer>
+
+<script>
+    ScrollReveal({
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+    });
+    
+    ScrollReveal().reveal('.main-title', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('#about .about-image', { delay: 600, origin: 'bottom' });
+    ScrollReveal().reveal('#about .text-box', { delay: 700, origin: 'right' });
+</script>
 </body>
 </html>
