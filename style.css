@@ -11,6 +11,19 @@ html {
 }
 
 
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#642bff, #ff22e6);
+  border-radius: 10px;
+}
+
+
 /* Header section */
 #header {
   width: 100%;
