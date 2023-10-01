@@ -269,7 +269,7 @@ html {
 
 /* Rest */
 .main {
-  height: 700px;
+  height: 276px;
   background-color: black;
   color: white;
 }
@@ -293,6 +293,7 @@ html {
     overflow-y: hidden;
     position: relative;
     z-index: 10;
+    padding: 60px;
 }
 
 .scroller::-webkit-scrollbar {
