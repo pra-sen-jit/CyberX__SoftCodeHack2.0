@@ -6,7 +6,8 @@
 
 }
 body{
-  background-color: rgb(48, 48, 82);
+  background: #333b58;
+  background: -webkit-linear-gradient(0deg, #333b58 0%, #1a1d22 100%);
 }
 .container1{
   width: 100%;
@@ -28,7 +29,7 @@ body{
   font-weight: 600;
 }
 span{
-  color: rgb(12, 8, 8);
+  color: yellow;
 }
 .container2{
   color: white;
