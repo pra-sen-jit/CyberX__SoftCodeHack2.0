@@ -21,6 +21,7 @@
     color: white;
     position: fixed;
     z-index: 4;
+    background-color: black;
 }
   
 .header-top .logo {
