@@ -8,6 +8,110 @@
     color: #fff;
 }
 
+
+.header-top {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 76px;
+    padding-bottom: 40px;
+    gap: 40px;
+    justify-content: space-between;
+    font-weight: 500;
+    color: white;
+    position: fixed;
+    z-index: 4;
+}
+  
+.header-top .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+}
+  
+  .ring {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 0px solid black;
+    position: absolute;
+  }
+  .ring:nth-child(1) {
+    border-bottom-width: 8px;
+    border-color: rgb(255, 103, 31);
+    animation: animate 2s linear infinite;
+  }
+  @keyframes animate {
+    from {
+      transform: rotateX(30deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    to {
+      transform: rotateX(30deg) rotateY(-45deg) rotateZ(360deg);
+    }
+  }
+  .ring:nth-child(2) {
+    border-right: 8px solid rgb(255, 255, 255);
+    animation: animes 2s linear infinite;
+  }
+  @keyframes animes {
+    from {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    to {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+  }
+  .ring:nth-child(3) {
+    border-left: 8px solid rgb(4, 106, 56);
+    animation: animess 2s linear infinite;
+  }
+  @keyframes animess {
+    from {
+      transform: rotateX(35deg) rotateY(55deg) rotate(0);
+    }
+    to {
+      transform: rotateX(35deg) rotateY(55deg) rotatez(360deg);
+    }
+  }
+  
+  .logo img {
+    width: 100px;
+    filter: invert(1);
+  }
+  
+  .nav-menu ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+  }
+  
+  .nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  .nav-menu ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #faca22;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  .nav-menu ul li a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-menu .fa-solid {
+    display: none;
+  }
+
+
 #n{
     height: 60px;
 }
